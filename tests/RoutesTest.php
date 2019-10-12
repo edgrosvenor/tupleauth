@@ -9,7 +9,7 @@ class RoutesTest extends TestCase
     {
         $response = $this->get('/login');
 
-        dump($response->exception);
+        $response->dump();
 
         $response->assertSuccessful();
     }

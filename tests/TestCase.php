@@ -5,6 +5,10 @@ namespace Tupleauth\Tests;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use Tupleauth\TupleauthServiceProvider;
 
+use Illuminate\Support\Facades\Artisan;
+
+use Laravel\Ui\AuthCommand;
+
 class TestCase extends BaseTestCase
 {
     public function setUp(): void
@@ -21,6 +25,10 @@ class TestCase extends BaseTestCase
 
     protected function getEnvironmentSetUp($app)
     {
+        $command = new AuthCommand();
+        Artisan::registerCommand($command);
+        Artisan::call('ui:auth bootstrap --views --force');
+
         $app['config']->set('app.key', 'base64:r0w0xC+mYYqjbZhHZ3uk1oH63VadA3RKrMW52OlIDzI=');
     }
 }
