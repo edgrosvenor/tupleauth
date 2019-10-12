@@ -2,10 +2,10 @@
 
 namespace Tupleauth\Tests;
 
-use Illuminate\Support\Facades\Artisan;
 use Laravel\Ui\AuthCommand;
-use Orchestra\Testbench\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\Artisan;
 use Tupleauth\TupleauthServiceProvider;
+use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
