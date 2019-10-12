@@ -1,0 +1,51 @@
+{
+    "name": "edgrosvenor/tupleauth",
+    "description": "Replacement for default Laravel auth routes",
+    "keywords": [
+        "livewire",
+        "laravel"
+    ],
+    "homepage": "https://github.com/edgrosvenor/tupleauth",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ed Grosvenor",
+            "email": "ed.grosvenor@wickedviral.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "laravel/ui": "^1.1",
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tupleauth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tupleauth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tupleauth\\TupleauthServiceProvider"
+            ]
+        }
+    }
+}
