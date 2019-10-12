@@ -1,12 +1,20 @@
-# Auth Routes, Tuple Style
+# Freek Broke My Auth Routes!
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/edgrosvenor/tupleauth.svg?style=flat-square)](https://packagist.org/packages/edgrosvenor/tupleauth)
 
-Inspried by 
+I am a big fan of Freek Van der Herten's approach to  
 [A better way to register routes in Laravel](https://freek.dev/1210-a-better-way-to-register-routes-in-laravel) and 
-[Simplifying controllers](https://freek.dev/1324-simplifying-controllers#controllers-are-better-off-without-a-default-namespace)
-this package strives to quickly solve the one little annoyance that removing the namespace from the route service
-provider introduces. The auth routes don't work anymore. You could go in and add them by hand to your web.php file but
-that isn't fun. So instead, you can just require this package and delete the Routes::auth() from your route file.
+[Simplifying controllers](https://freek.dev/1324-simplifying-controllers#controllers-are-better-off-without-a-default-namespace).
+
+But if you follow his advice your auth routes will break. This is because they rely on that namespace in the routes
+ service provider. 
+ 
+ You could just manually add all the auth routes by hand to your web.php file. Or you can just type
+ 
+ `composer require edgrosvenor/tupleauth`
+ 
+ and delete `Routes::auth()` from your routes/web.php file.
+ 
+ That's it. No scripts to run. Nothing to add to any service provider. Just set it and forget it.
 
 ## Installation
 
@@ -18,7 +26,7 @@ composer require edgrosvenor/tupleauth
 
 ## Usage
 
-
+Follow Freek's instructions in the articles above. Then delete Routes::auth() from routes/web.php.
 
 ### Testing
 
