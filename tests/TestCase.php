@@ -2,9 +2,6 @@
 
 namespace Tupleauth\Tests;
 
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\File;
-use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use Tupleauth\TupleauthServiceProvider;
 
@@ -13,7 +10,6 @@ class TestCase extends BaseTestCase
     public function setUp(): void
     {
         parent::setUp();
-
     }
 
     protected function getPackageProviders($app)

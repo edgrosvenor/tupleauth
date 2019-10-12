@@ -2,8 +2,6 @@
 
 namespace Tupleauth\Tests;
 
-use Livewire\Livewire;
-
 class RoutesTest extends TestCase
 {
     /** @test */
@@ -11,11 +9,8 @@ class RoutesTest extends TestCase
     {
         $response = $this->get('/login');
 
-        dump( $response->exception);
+        dump($response->exception);
 
         $response->assertSuccessful();
-
     }
-
-
 }
