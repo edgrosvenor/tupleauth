@@ -28,23 +28,6 @@ composer require edgrosvenor/tupleauth
 
 Follow Freek's instructions in the articles above. Then delete Routes::auth() from routes/web.php.
 
-### Testing
-
-``` bash
-composer test
-```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email ed.grosvenor@exactsports.com instead of using the issue tracker.
 
 ## Credits
 
