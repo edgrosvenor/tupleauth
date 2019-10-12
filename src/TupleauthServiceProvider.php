@@ -22,8 +22,8 @@ class TupleauthServiceProvider extends ServiceProvider
         Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
         Route::post('login', [LoginController::class, 'login']);
         Route::post('logout', [LoginController::class, 'logout'])->name('logout');
-        Route::get('begin_testing_your_athletes', [RegisterController::class, 'showRegistrationForm'])->name('register');
-        Route::post('begin_testing_your_athletes', [RegisterController::class, 'register']);
+        Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+        Route::post('register', [RegisterController::class, 'register']);
         Route::get('password/reset', [ForgotPasswordController::class, 'showLinkReqeustForm'])->name('password.request');
         Route::post('password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
         Route::get('password/reset/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
