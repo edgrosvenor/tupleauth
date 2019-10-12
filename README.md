@@ -1,8 +1,7 @@
 # Freek Broke My Auth Routes!
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/edgrosvenor/tupleauth.svg?style=flat-square)](https://packagist.org/packages/edgrosvenor/tupleauth)
 
-I am a big fan of [Freek Van der Herten's](https://twitter.com/freekmurze) approach to  
-[A better way to register routes in Laravel](https://freek.dev/1210-a-better-way-to-register-routes-in-laravel) and 
+I am a big fan of [Freek Van der Herten's](https://twitter.com/freekmurze) approach to  [A better way to register routes in Laravel](https://freek.dev/1210-a-better-way-to-register-routes-in-laravel) and 
 [Simplifying controllers](https://freek.dev/1324-simplifying-controllers#controllers-are-better-off-without-a-default-namespace).
 
 But if you follow his advice your auth routes will break. This is because they rely on that namespace in the routes
