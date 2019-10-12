@@ -2,21 +2,16 @@
 
 namespace Tupleauth;
 
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\Auth\VerificationController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
-use App\Http\Controllers\Auth\VerificationController;
-use App\Http\Controllers\Auth\ResetPasswordController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\LoginController;
-
-
 class TupleauthServiceProvider extends ServiceProvider
 {
-
-
-
     public function boot()
     {
         Route::get('login', [LoginController::class, 'showLoginForm'])->name('login')->middleware('web');
@@ -32,5 +27,4 @@ class TupleauthServiceProvider extends ServiceProvider
         Route::get('email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware('web');
         Route::post('email/resend', [VerificationController::class, 'resend'])->name('verification.resend')->middleware('web');
     }
-
 }
