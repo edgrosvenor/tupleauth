@@ -1,6 +1,7 @@
 # Freek Broke My Auth Routes!
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/edgrosvenor/tupleauth.svg?style=flat-square)](https://packagist.org/packages/edgrosvenor/tupleauth)
 ![StyleCI](https://github.styleci.io/repos/214550199/shield?branch=master)
+![ChipperCI](https://app.chipperci.com/projects/6aa0e545-a9b9-489f-ab4d-ea33ca265625/status/master)
 
 I am a big fan of [Freek Van der Herten's](https://twitter.com/freekmurze) approach to  [A better way to register routes in Laravel](https://freek.dev/1210-a-better-way-to-register-routes-in-laravel) and 
 [Simplifying controllers](https://freek.dev/1324-simplifying-controllers#controllers-are-better-off-without-a-default-namespace).
